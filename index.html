@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Dom e JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Calculadora Web</h1>
+    <form action="">
+        <ul>
+            <li>
+                <label for="valor1">Primeiro Valor</label>
+                <input type="text" id="valor1">
+            </li>
+            <li>
+                <label for="operacao">Escolha a operação aritmética</label>
+                <select name="operacao" id="operacao">
+                    <option value="+"> +(adição)</option>
+                    <option value="-"> -(subtração)</option>
+                    <option value="*"> *(multiplicação)</option>
+                    <option value="/"> /(divisão)</option>
+                </select><br><br>
+                <label for="valor2">Segundo valor</label>
+                <input type="text" id="valor2">
+            </li>
+            <input type="button" onclick="Calcular('valor1', 'valor2', 'operacao', 'saida')" value="Calcular">
+            <input type="button" onclick="Limpar('valor1', 'valor2', 'saida')" value="Limpar os valores">
+        </ul>
+    </form>
+    <p id="saida"></p>
+
+    <script src="main.js" type="text/JavaScript"></script>
+</body>
+</html>
